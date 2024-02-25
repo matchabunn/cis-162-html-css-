@@ -1,0 +1,27 @@
+body {
+    color: rgb(88, 88, 155);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: pink;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(172, 26, 106);
+}
+
+section {
+line-height: 1.5em;
+}
+
+footer {
+background-color: pink;
+text-align: center;
+}
+
+nav > ul {
+    color: rgb(50, 143, 172);
+}
