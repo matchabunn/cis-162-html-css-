@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+html {
+   background-color: rgb(255, 255, 255);
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2, 2fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:    "header header"
+                            "section section"
+                            "article article"
+                            "article article"
+                            "footer footer";
+    grid-gap: 35px;
+justify-content: center;
+}
+
+
+/* Page Header Styles */
+body > header > img {
+    display: block;
+    width: 50%;
+    margin: auto;
+ }
+ 
+header {
+   grid-row: 1;
+   grid-column: 1/-1;
+   background-color: white;
+   width:100%;
+ }
+ 
+ /* Horizontal Navigation List Styles */
+ 
+ body > header > nav.horizontalNavigation li {
+   width: 20%;
+   margin: auto;
+}
+
+ nav.horizontalNavigation > ul > li {
+    display: block;
+    float: left;
+ }
+ 
+ nav.horizontalNavigation a {
+    background-color: rgb(79, 129, 158);
+    display: block;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    text-align: center;
+    width: 100%;
+ }  
+ 
+ nav.horizontalNavigation a:link, 
+ nav.horizontalNavigation a:visited {
+    color: rgb(215, 234, 240);
+ }
+ 
+ nav.horizontalNavigation a:hover, 
+ nav.horizontalNavigation a:active {
+    background-color: rgb(38, 68, 92);
+ }
+
+ /*other*/
+
+div {
+   text-align: center;
+   background-color: rgb(127, 204, 255);
+   padding: 50px;
+ }
+
+ footer {
+   display:flex;
+   color: rgb(215, 234, 240);
+   background-color: rgb(79, 129, 158);
+   padding: 0.3em 0;
+   margin-top:3em;
+   width:200%;
+   justify-content: center;
+   padding:10px;
+ }
+
+ section {
+   text-align: center;
+   width:200%;
+   margin: auto 0;
+   padding-bottom: 15px;
+ }
